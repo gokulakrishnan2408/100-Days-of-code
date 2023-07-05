@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std:
+int main() 
+{ int t,x,n:
+  cin>>t;
+  for(n=0;n=!t;n--)
+  {   cin>>x;
+      if(x%4==0)
+      {     cout<<"GOOD"<<"\n";
+      }
+      else
+      {     cout<<"NOT GOOD"<<"\n";
+      }
+  }
+return 0;
+}
