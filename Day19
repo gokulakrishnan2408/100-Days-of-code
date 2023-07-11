@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+     int n,m,t;
+     cin>>t;
+     for(int i=0;i<t;i++)
+     {
+      cin >>n>>m;
+      if(m>n)
+      {
+          cout<<n<<"\n";
+      }
+      else if(m==0)
+      {
+          cout<<2*n<<"\n";
+      }
+      else
+      {
+          cout<<(n+(n-m))<<"\n";
+      }
+     }
+	return 0;
+}
