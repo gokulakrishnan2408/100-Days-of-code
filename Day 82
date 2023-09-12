@@ -1,0 +1,14 @@
+class Solution {
+public:
+    int reversePairs(vector<int>& nums) {
+        int n=nums.size();
+        int ct=0;
+        for(int i=1;i<n;i++){
+            for(int j=i;j<n;j++){
+                if((long long)nums[i-1]>2*(long long)nums[j])
+                   ct++;
+            }
+        }
+        return ct;
+    }
+};
