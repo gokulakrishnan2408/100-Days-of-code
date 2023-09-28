@@ -1,0 +1,20 @@
+class Solution {
+public:
+    bool isIsomorphic(string s, string t) {
+        int i;
+        unordered_map<char, char> m;
+
+        for(i=0 ; i<s.length() ; i++){
+            m[s[i]] = t[i];
+        }
+
+        for(i=0 ; i<s.length() ; i++){
+            for( auto it:m) {
+                if(it.first==s[i] && it.second!=t[i]){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+};
